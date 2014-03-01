@@ -1,7 +1,7 @@
 //
 //  HHPlayerControlView.h
 //
-//  Copyright (c) 2013 Ji Wanqiang
+//  Copyright (c) 2013 Wanqiang Ji
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -23,63 +23,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MediaPlayer/MediaPlayer.h>
-#import <AudioToolbox/AudioToolbox.h>
-#import <AVFoundation/AVFoundation.h>
-
-#define BUTTON_PLAY_PAUSE_L 27.f
-#define BUTTON_PLAY_PAUSE_R 9.f
-#define BUTTON_PLAY_PAUSE_T 8.f
-#define BUTTON_PLAY_PAUSE_W 63.f
-#define BUTTON_PLAY_PAUSE_H 64.f
-
-#define SLIDER_PROGRESS_L   9.f
-#define SLIDER_PROGRESS_R   9.f
-#define SLIDER_PROGRESS_T   27.f
-#define SLIDER_PROGRESS_W   0.f
-#define SLIDER_PROGRESS_H   29.f
-#define SLIDER_PROGRESS_FR  54.f
-
-#define IMAGEVIEW_VOLUME_L  49.f
-#define IMAGEVIEW_VOLUME_R  4.f
-#define IMAGEVIEW_VOLUME_T  29.f
-#define IMAGEVIEW_VOLUME_W  26.f
-#define IMAGEVIEW_VOLUME_H  22.f
-
-#define SLIDER_VOLUME_L     4.f
-#define SLIDER_VOLUME_R     37.f
-#define SLIDER_VOLUME_T     27.f
-#define SLIDER_VOLUME_W     127.f
-#define SILDER_VOLUME_H     29.f
-
-#define BUTTON_SCALE_L      0.f
-#define BUTTON_SCALE_R      22.f
-#define BUTTON_SCALE_T      19.f
-#define BUTTON_SCALE_W      44.f
-#define BUTTON_SCALE_H      44.f
-
-#define LABEL_TIME_L        12.f
-#define LABEL_TIME_T        53.f
-#define LABEL_TIME_FONT     [UIFont systemFontOfSize:18.f]
-#define LABEL_TIME_COLOR    [UIColor whiteColor]
-
-#define LABEL_TIME_DEFAULT_TEXT @"--:-- / --:--"
-
-#define __LISTENSESSION__ (1)
-
-@interface NSObject (Listener)
-
-#if defined(__LISTENSESSION__) && __LISTENSESSION__
-
-- (void)listenOutPutVolumeWithCallBack:(AudioSessionPropertyListener)intProc;
-- (void)removeOutPutVolumeListenerWithProc:(AudioSessionPropertyListener)intProc;
-
-- (void)listenAudioRouteChangeWithCallBack:(AudioSessionPropertyListener)intProc;
-- (void)removeAudioRouteVolumeListenerWithProc:(AudioSessionPropertyListener)intProc;
-
-#endif
-
-@end
 
 /**
  *  Control View of the Player, such as play/pause/speed/reverse/volume and so on.

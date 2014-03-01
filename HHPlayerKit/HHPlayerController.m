@@ -1,7 +1,7 @@
 //
 //  HHPlayerController.m
 //
-//  Copyright (c) 2013 Ji Wanqiang
+//  Copyright (c) 2013 Wanqiang Ji
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,10 +25,7 @@
 #import "HHPlayerController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <objc/message.h>
-
-#import "HHPlayerView.h"
-#import "HHPlayerKeys.h"
-#import "HHPlayerNotification.h"
+#import "HHPlayerKit.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
@@ -202,9 +199,9 @@ static const void *currentTimeKey = &currentTimeKey;
     self.timeObserver = [self.player addPeriodicTimeObserverForInterval:cInterval
                                                                   queue:NULL
                                                              usingBlock:^(CMTime time) {
-                             NSTimeInterval tI = CMTimeGetSeconds(time);
-                             [bself setCurrentTime:tI];
-                         }];
+                                                                 NSTimeInterval tI = CMTimeGetSeconds(time);
+                                                                 [bself setCurrentTime:tI];
+                                                             }];
 
 }
 

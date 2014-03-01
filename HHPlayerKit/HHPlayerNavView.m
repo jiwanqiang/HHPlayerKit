@@ -1,7 +1,7 @@
 //
 //  HHPlayerNavView.m
 //
-//  Copyright (c) 2013 Ji Wanqiang
+//  Copyright (c) 2013 Wanqiang Ji
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -23,6 +23,14 @@
 //
 
 #import "HHPlayerNavView.h"
+
+#define HH_BUTTON_BACK_L 14.f
+#define HH_BUTTON_BACK_T 10.f
+#define HH_BUTTON_BACK_W 63.f
+#define HH_BUTTON_BACK_H 37.f
+
+#define HH_LABEL_NAV_TITLE_FONT     [UIFont boldSystemFontOfSize:20.f]
+#define HH_LABEL_NAV_TITLE_COLOR    [UIColor whiteColor]
 
 @interface HHPlayerNavView ()
 {

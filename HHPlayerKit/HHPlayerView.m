@@ -1,7 +1,7 @@
 //
 //  HHPlayerView.m
 //
-//  Copyright (c) 2013 Ji Wanqiang
+//  Copyright (c) 2013 Wanqiang Ji
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -24,10 +24,13 @@
 
 #import "HHPlayerView.h"
 #import <AVFoundation/AVFoundation.h>
-#import "HHPlayerNavView.h"
-#import "HHPlayerControlView.h"
-#import "HHPlayerBGView.h"
-#import "HHAirplayActiveView.h"
+#import "HHPlayerKit.h"
+
+#define NAV_VIEW_H      57.f
+#define CONTROL_VIEW_H  67.f
+#define ANIMATION_TIME_INTERVAL .5f
+
+#define INDICATOR_TITLE @"提示 : 该视频已经通过AirPlay转到高清屏幕播放"
 
 #pragma mark - __MediaView
 
@@ -130,8 +133,8 @@
     _backgroundView.frame = CGRectMake(0, 0, _width, _height);
     _airplayActiveView.frame = CGRectMake(0, 0, _width, _height);
     _mediaView.frame = CGRectMake(0, 0, _width, _height);
-    _navigationView.frame = CGRectMake(0.f, 20.f, _width, 57.f);
-    _controlView.frame = CGRectMake(0.f, _height-78.f, _width, 78.f);
+    _navigationView.frame = CGRectMake(0.f, 20.f, _width, NAV_VIEW_H);
+    _controlView.frame = CGRectMake(0.f, _height - CONTROL_VIEW_H, _width, CONTROL_VIEW_H);
 }
 
 #pragma mark - Super Methods
@@ -227,7 +230,7 @@
 
 - (NSTimeInterval)controlViewHideAnimationDuration
 {
-    return .5f;
+    return ANIMATION_TIME_INTERVAL;
 }
 
 #pragma mark - Public Methods
@@ -237,7 +240,7 @@
     if (animation) {
         self.userInteractionEnabled = NO;
         [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:.5f];
+        [UIView setAnimationDuration:ANIMATION_TIME_INTERVAL];
         [UIView setAnimationDelegate:self];
         [UIView setAnimationDidStopSelector:@selector(showControlView)];
         [self hideControlView];
@@ -246,7 +249,7 @@
     _preFrame = self.frame;
     CGFloat w = CGRectGetHeight([UIScreen mainScreen].applicationFrame);
     CGFloat h = CGRectGetWidth([UIScreen mainScreen].applicationFrame);
-    [self setFrame:CGRectMake(0.f, 0.f, w, h+20.f)];
+    [self setFrame:CGRectMake(0.f, 0.f, w, h + 20.f)];
     
     if (animation) {
         [UIView commitAnimations];
@@ -260,7 +263,7 @@
     if (animation) {
         self.userInteractionEnabled = NO;
         [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:.5f];
+        [UIView setAnimationDuration:ANIMATION_TIME_INTERVAL];
         [UIView setAnimationDelegate:self];
         [UIView setAnimationDidStopSelector:@selector(showControlView)];
         [self setFrame:_preFrame];

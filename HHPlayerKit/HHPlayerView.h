@@ -1,7 +1,7 @@
 //
 //  HHPlayerView.h
 //
-//  Copyright (c) 2013 Ji Wanqiang
+//  Copyright (c) 2013 Wanqiang Ji
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -24,15 +24,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define INDICATOR_TITLE @"提示 : 该视频已经通过AirPlay转到高清屏幕播放"
-
-@class HHPlayerBGView;
-@class HHPlayerNavView;
-@class HHAirplayActiveView;
-@class HHPlayerController;
-@class HHPlayerControlView;
-@class __MediaView;
-
 typedef enum HHMovieScalingMode
 {
     HHMovieScalingModeNone,         /**< None scaling*/
@@ -42,6 +33,13 @@ typedef enum HHMovieScalingMode
     HHMovieScalingModeFill          /**< Non-uniform scale. Both render dimensions will exactly match the*/
                                     /**< visible bounds*/
 } HHMovieScalingMode;
+
+@class HHPlayerBGView;
+@class HHPlayerNavView;
+@class HHAirplayActiveView;
+@class HHPlayerController;
+@class HHPlayerControlView;
+@class __MediaView;
 
 /**
  *  HHPlayerView which contains many elements and display the media content in it.
