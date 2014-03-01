@@ -35,6 +35,7 @@
 		BFC3498518BF0EE800A7FC11 /* HHPlayerNotification.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFC3496A18BEE00300A7FC11 /* HHPlayerNotification.h */; };
 		BFC3498618BF0EE800A7FC11 /* HHAirplayActiveView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFC3497918BF08BF00A7FC11 /* HHAirplayActiveView.h */; };
 		BFC3498718BF0EE800A7FC11 /* HHPlayerControlView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFC3496118BEE00300A7FC11 /* HHPlayerControlView.h */; };
+		BFD9F36118C1C9E3005C5088 /* HHAirPlayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD9F35F18C1C9E3005C5088 /* HHAirPlayButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		BFC3497918BF08BF00A7FC11 /* HHAirplayActiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAirplayActiveView.h; sourceTree = "<group>"; };
 		BFC3497C18BF0B8A00A7FC11 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BFC3497E18BF0B9100A7FC11 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BFD9F35F18C1C9E3005C5088 /* HHAirPlayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAirPlayButton.m; sourceTree = "<group>"; };
+		BFD9F36018C1C9E3005C5088 /* HHAirPlayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAirPlayButton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 				BFC3496018BEE00300A7FC11 /* HHPlayerView.m */,
 				BFC3497818BF08BF00A7FC11 /* HHPlayerBGView.h */,
 				BFC3497718BF08BF00A7FC11 /* HHPlayerBGView.m */,
+				BFD9F36018C1C9E3005C5088 /* HHAirPlayButton.h */,
+				BFD9F35F18C1C9E3005C5088 /* HHAirPlayButton.m */,
 				BFC3496818BEE00300A7FC11 /* HHPlayerNavView.h */,
 				BFC3496318BEE00300A7FC11 /* HHPlayerNavView.m */,
 				BFC3496418BEE00300A7FC11 /* HHPlayerController.h */,
@@ -298,6 +303,7 @@
 				BFC3497A18BF08BF00A7FC11 /* HHAirplayActiveView.m in Sources */,
 				BFC3496D18BEE00300A7FC11 /* HHPlayerController.m in Sources */,
 				BFC3497218BEE00300A7FC11 /* HHPlayerKeys.m in Sources */,
+				BFD9F36118C1C9E3005C5088 /* HHAirPlayButton.m in Sources */,
 				BFC3496F18BEE00300A7FC11 /* HHPlayerView.m in Sources */,
 				BFC3496E18BEE00300A7FC11 /* HHPlayerControlView.m in Sources */,
 				BFC3497318BEE00300A7FC11 /* HHPlayerNotification.m in Sources */,
