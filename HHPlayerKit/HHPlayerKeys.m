@@ -37,7 +37,7 @@ NSString * const kPlayerCurrentItem = @"currentItem";
 
 #pragma mark - Error Region
 
-NSString * const HHErrorDomain      = @"HHErrorDomain";
+NSString * const HHErrorDomain      = @"com.jiwanqiang.err.HHErrorDomain";
 
 NSInteger const kHHErrorCancelLoadingCode = 401;
 NSInteger const kHHErrorUnavailableCode   = 404;

@@ -24,10 +24,10 @@
 
 #import <Foundation/Foundation.h>
 
-NSString * const kPlayerLoadFailedNotification    = @"HHPlayerLoadFaieldNotification";
-NSString * const kPlayerVideoChangedNotification  = @"HHPlayerVideoChangedNotification";
+NSString * const kPlayerLoadFailedNotification    = @"com.jiwanqiang.notifi.HHPlayerLoadFaieldNotification";
+NSString * const kPlayerVideoChangedNotification  = @"com.jiwanqiang.notifi.HHPlayerVideoChangedNotification";
 
-NSString * const kPlayerPlaybackStartNotification   = @"HHPlayerPlaybackStartNotification";
-NSString * const kPlayerPlaybackFinishNotification  = @"HHPlayerPlaybackFinishNotification";
-NSString * const kPlayerPlaybackPauseNotificaion    = @"HHPlayerPlaybackPauseNotification";
-NSString * const kPlayerPlaybackStopNotificaion     = @"HHPlayerPlaybackStopNotification";
+NSString * const kPlayerPlaybackStartNotification   = @"com.jiwanqiang.notifi.HHPlayerPlaybackStartNotification";
+NSString * const kPlayerPlaybackFinishNotification  = @"com.jiwanqiang.notifi.HHPlayerPlaybackFinishNotification";
+NSString * const kPlayerPlaybackPauseNotificaion    = @"com.jiwanqiang.notifi.HHPlayerPlaybackPauseNotification";
+NSString * const kPlayerPlaybackStopNotificaion     = @"com.jiwanqiang.notifi.HHPlayerPlaybackStopNotification";
