@@ -22,6 +22,9 @@
 //  IN THE SOFTWARE.
 //
 
+#ifndef HH_PlayerKit_H
+#define HH_PlayerKit_H
+
 #import "HHPlayList.h"
 #import "HHPlayerView.h"
 #import "HHPlayerKeys.h"
@@ -32,3 +35,5 @@
 #import "HHPlayerControlView.h"
 
 #import "HHPlayerNotification.h"
+
+#endif

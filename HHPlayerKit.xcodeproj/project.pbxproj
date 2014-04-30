@@ -417,6 +417,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/HHPlayerKit.dst;
+				DYLIB_CURRENT_VERSION = 0.1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HHPlayerKit/HHPlayerKit-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -430,6 +431,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/HHPlayerKit.dst;
+				DYLIB_CURRENT_VERSION = 0.1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HHPlayerKit/HHPlayerKit-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
