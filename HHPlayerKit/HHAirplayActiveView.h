@@ -30,7 +30,7 @@
 @interface HHAirplayActiveView : UIView
 
 /**
- *  int the instance with frame and indicator title.
+ *  init the instance with frame and indicator title.
  *
  *  @param frame frame of the view
  *  @param title indicator title
